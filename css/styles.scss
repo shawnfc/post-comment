@@ -1,0 +1,65 @@
+$main-color: #00f28f;
+
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    border-left: 2px solid $main-color;
+    font-size: 48px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.main {
+    margin-top: 80px;
+}
+
+form {
+    input {
+        background-color: #f0f0f0;
+        border: none;
+        border-left: 2px solid #fff;
+
+        font-size: 36px;
+        padding: 20px;
+        width: 100%;
+
+        transition: background 2s, border-left 2s;
+
+        &:focus {
+            background: #fff;
+            border-left: 2px solid #000;
+            outline: none;
+        }
+    }
+
+    button.btn {
+        background: transparent;
+        border: none;
+        color: #00f28f;
+        cursor: pointer;
+        font-size: 36px;
+        padding: 20px 24px;
+        transition: background .5s, color 1s;
+
+        &:hover {
+            background: $main-color;
+            color: #fff;
+        }
+    }
+}
+
+.comments {
+    margin-top: 40px;
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        padding-left: 20px;
+        border-left: 2px solid black;
+        font-size: 36px;
+        margin-bottom: 36px;
+    }
+}
